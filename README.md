@@ -46,8 +46,11 @@ The backend runs the FastAPI server and the associated Multi-Agent infrastructur
 ```bash
 cd backend
 pip install -r requirements.txt
-# Run the FastAPI server (which implicitly triggers the MCP clients)
+# Run the FastAPI server
 fastapi run main.py
+
+# Note: If you are on Windows and get a "command not found" error, run:
+# python -m uvicorn main:app --reload
 ```
 
 ### 2. Frontend Setup (React + Vite)
