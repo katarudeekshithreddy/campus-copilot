@@ -247,17 +247,17 @@ export default function Dashboard({ roadmaps, setActiveRoadmapTab, user }) {
           {resumeTarget ? (
             <div className="ai-insight-card">
               <p style={{ margin: '0 0 0.25rem 0', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>✨ Recommended Focus</p>
-              <p style={{ margin: 0, color: '#fff' }}>Continue your work on <strong>{resumeTarget.title}</strong> to maintain your momentum in the {resumeTarget.roadmapTitle} track.</p>
+              <p style={{ margin: 0, color: 'var(--text-primary)' }}>Continue your work on <strong>{resumeTarget.title}</strong> to maintain your momentum in the {resumeTarget.roadmapTitle} track.</p>
             </div>
           ) : (
             <div className="ai-insight-card">
               <p style={{ margin: '0 0 0.25rem 0', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>✨ Getting Started</p>
-              <p style={{ margin: 0, color: '#fff' }}>Create a new roadmap to generate a personalized AI curriculum and begin your journey!</p>
+              <p style={{ margin: 0, color: 'var(--text-primary)' }}>Create a new roadmap to generate a personalized AI curriculum and begin your journey!</p>
             </div>
           )}
           <div className="ai-insight-card warning">
               <p style={{ margin: '0 0 0.25rem 0', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>✨ AI Tutor Tip</p>
-              <p style={{ margin: 0, color: '#fff' }}>If you get stuck on a coding task, jump over to the AI Tutor tab. It is fully aware of your active module and personal notes.</p>
+              <p style={{ margin: 0, color: 'var(--text-primary)' }}>If you get stuck on a coding task, jump over to the AI Tutor tab. It is fully aware of your active module and personal notes.</p>
           </div>
         </div>
       </div>
