@@ -30,6 +30,10 @@ Use the context of what they are working on to tailor your technical analogies. 
         # Convert chat_history to Gemini format
         contents = []
         for msg in chat_history:
+            # Skip the initial static greeting from the frontend to avoid Gemini "must start with user" error
+            if msg.get("content", "").startswith("Hello! I am your Campus Copilot AI Tutor"):
+                continue
+                
             role = "user" if msg.get("role") == "user" else "model"
             contents.append(
                 types.Content(
